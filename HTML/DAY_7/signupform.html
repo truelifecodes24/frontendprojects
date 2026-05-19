@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Signup Form</title>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+
+    <form>
+
+        <!-- Email -->
+        <label>Email:</label><br>
+        <input 
+            type="email" 
+            name="login_email" 
+            placeholder="Enter your email"
+            required>
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label><br>
+        <input 
+            type="password" 
+            name="login_password" 
+            placeholder="Enter your password"
+            minlength="6"
+            maxlength="12"
+            required>
+        <br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Login">
+
+    </form>
+
+    <hr>
+
+    <h2>Signup Form</h2>
+
+    <form>
+
+        <!-- Full Name -->
+        <label>Full Name:</label><br>
+        <input 
+            type="text" 
+            name="fullname"
+            placeholder="Enter your full name"
+            minlength="3"
+            maxlength="30"
+            required>
+        <br><br>
+
+        <!-- Username -->
+        <label>Username:</label><br>
+        <input 
+            type="text" 
+            name="username"
+            placeholder="Choose a username"
+            minlength="5"
+            maxlength="15"
+            required>
+        <br><br>
+
+        <!-- Email -->
+        <label>Email Address:</label><br>
+        <input 
+            type="email" 
+            name="signup_email"
+            placeholder="Enter your email"
+            required>
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label><br>
+        <input 
+            type="password" 
+            name="signup_password"
+            placeholder="Create a password"
+            minlength="6"
+            maxlength="12"
+            required>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label>Phone Number:</label><br>
+        <input 
+            type="tel" 
+            name="phone"
+            placeholder="Enter phone number"
+            minlength="10"
+            maxlength="10"
+            required>
+        <br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Signup">
+
+        <!-- Reset -->
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

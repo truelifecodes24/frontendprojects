@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete HTML5 Online Tutorial Webpage">
+  <meta name="keywords" content="HTML5, Tutorial, Web Development">
+  <meta name="author" content="ChatGPT">
+  <title>HTML5 Complete Online Tutorial</title>
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header>
+    <h1>HTML5 Complete Online Tutorial</h1>
+    <p>Learn HTML5 concepts with examples and explanations.</p>
+
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#text">Text Formatting</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#table">Tables</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#semantic">Semantic Tags</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- INTRODUCTION -->
+    <section id="intro">
+      <h2>Introduction to HTML5</h2>
+      <article>
+        <p>
+          <strong>HTML5</strong> stands for <em>HyperText Markup Language version 5</em>.
+          It is used to create and structure web pages.
+        </p>
+
+        <figure>
+          <img src="../assets/logos/HTML5_logo.svg"
+               alt="HTML5 Logo"
+               width="200">
+          <figcaption>Official HTML5 Logo</figcaption>
+        </figure>
+
+        <details>
+          <summary>Why Learn HTML5?</summary>
+          <p>HTML5 is the foundation of all modern websites and web applications.</p>
+        </details>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- TEXT FORMATTING -->
+    <section id="text">
+      <h2>Text Formatting Tags</h2>
+
+      <p><b>Bold Text</b></p>
+      <p><strong>Important Text</strong></p>
+      <p><i>Italic Text</i></p>
+      <p><em>Emphasized Text</em></p>
+      <p><mark>Highlighted Text</mark></p>
+      <p><small>Small Text</small></p>
+      <p><del>Deleted Text</del></p>
+      <p><ins>Inserted Text</ins></p>
+      <p>H<sub>2</sub>O</p>
+      <p>x<sup>2</sup></p>
+
+      <blockquote>
+        “The best way to learn HTML is by building projects.”
+      </blockquote>
+
+      <pre>
+&lt;h1&gt;Hello World&lt;/h1&gt;
+      </pre>
+
+      <code>
+        &lt;p&gt;This is a paragraph tag&lt;/p&gt;
+      </code>
+    </section>
+
+    <hr>
+
+    <!-- LISTS -->
+    <section id="lists">
+      <h2>HTML Lists</h2>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+      </ol>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Database</li>
+      </ul>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Structure of web pages</dd>
+
+        <dt>CSS</dt>
+        <dd>Styling web pages</dd>
+      </dl>
+    </section>
+
+    <hr>
+
+    <!-- TABLE -->
+    <section id="table">
+      <h2>HTML Table</h2>
+
+      <table border="1" cellpadding="10">
+        <caption>Web Development Roadmap</caption>
+
+        <thead>
+          <tr>
+            <th>Technology</th>
+            <th>Purpose</th>
+            <th>Difficulty</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Structure</td>
+            <td>Easy</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+            <td>Medium</td>
+          </tr>
+
+          <tr>
+            <td>JavaScript</td>
+            <td>Interactivity</td>
+            <td>Advanced</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">Start learning step by step.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- MEDIA -->
+    <section id="media">
+      <h2>HTML Media Elements</h2>
+
+      <h3>Audio Example</h3>
+      <audio controls>
+        <source src="../assets/audio/catmeow.wav" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+
+      <h3>Video Example</h3>
+      <video width="400" controls>
+        <source src="../assets/video/kittenplay.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+
+      <h3>YouTube using iframe</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CUapPhdM7nc?si=CrsJ0mwld8Jib91x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <hr>
+
+    <!-- FORMS -->
+    <section id="forms">
+      <h2>HTML5 Forms</h2>
+
+      <form>
+
+        <fieldset>
+          <legend>Student Registration Form</legend>
+
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter email">
+          <br><br>
+
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password">
+          <br><br>
+
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="phone">
+          <br><br>
+
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob">
+          <br><br>
+
+          <label for="color">Favorite Color:</label><br>
+          <input type="color" id="color" name="color">
+          <br><br>
+
+          <label for="range">Skill Level:</label><br>
+          <input type="range" id="range" min="0" max="100">
+          <br><br>
+
+          <label>Gender:</label><br>
+          <input type="radio" id="male" name="gender">
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender">
+          <label for="female">Female</label>
+          <br><br>
+
+          <label>Courses:</label><br>
+          <input type="checkbox" id="html">
+          <label for="html">HTML</label>
+
+          <input type="checkbox" id="css">
+          <label for="css">CSS</label>
+
+          <input type="checkbox" id="js">
+          <label for="js">JavaScript</label>
+          <br><br>
+
+          <label for="city">Choose City:</label><br>
+          <select id="city">
+            <option>Chennai</option>
+            <option>Mumbai</option>
+            <option>Bangalore</option>
+          </select>
+          <br><br>
+
+          <label for="message">Feedback:</label><br>
+          <textarea id="message" rows="5" cols="40"></textarea>
+          <br><br>
+
+          <label for="browser">Choose Browser:</label>
+          <input list="browsers" id="browser">
+
+          <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+          </datalist>
+          <br><br>
+
+          <progress value="70" max="100"></progress>
+          <br><br>
+
+          <meter value="0.8">80%</meter>
+          <br><br>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+
+        </fieldset>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- SEMANTIC TAGS -->
+    <section id="semantic">
+      <h2>HTML5 Semantic Elements</h2>
+
+      <article>
+        <h3>Article Tag</h3>
+        <p>The article tag represents independent content.</p>
+      </article>
+
+      <aside>
+        <h3>Aside Tag</h3>
+        <p>This content is related to the main content.</p>
+      </aside>
+
+      <section>
+        <h3>Section Tag</h3>
+        <p>Used to group related content.</p>
+      </section>
+
+      <time datetime="2026-05-18">May 18, 2026</time>
+      <br><br>
+
+      <address>
+        Written by HTML Tutor<br>
+        Visit us at: learnhtml.com
+      </address>
+    </section>
+
+    <hr>
+
+      <h3>Keyboard Input</h3>
+      <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.</p>
+
+      <h3>Abbreviation</h3>
+      <p><abbr title="HyperText Markup Language">HTML</abbr> is easy to learn.</p>
+ 
+  </main>
+
+  <hr>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 HTML5 Online Tutorial. All Rights Reserved.</p>
+<p>Follow us: <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    
+    <p>
+      Visit:
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+        MDN HTML Documentation
+      </a>
+    </p>
+
+    <a href="#top">Move To Top</a>
+  </footer>
+
+</body>
+</html>

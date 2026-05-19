@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h2>Job Application Form</h2>
+
+    <form>
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone"><br><br>
+        </fieldset>
+
+        <br>
+        <!-- JOB Details -->
+        <fieldset>
+            <legend>Job Selection</legend>
+
+            <label>Select Department:</label><br>
+
+            <select name="department">
+
+                <optgroup label="Bank jobs">
+                    <option value="Accountant">Accountant</option>
+                    <option value="S.Accountant">Senior Accountant</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Ass.Manager">Asst. Manager</option>
+                </optgroup>
+
+        
+            </select>
+
+            <br><br>
+
+             <!-- File Input -->
+        <label>Upload Resume:</label><br>
+        <input type="file" name="resume"><br><br>
+
+            <!-- Address Details -->
+        <fieldset>
+            <legend>Address Information</legend>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="5" cols="30"></textarea>
+            <br><br>
+
+            <label>City:</label><br>
+            <input type="text" name="city"><br><br>
+
+            <label>State:</label><br>
+            <input type="text" name="state"><br><br>
+
+            <label>Pincode:</label><br>
+            <input type="number" name="pincode"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
+

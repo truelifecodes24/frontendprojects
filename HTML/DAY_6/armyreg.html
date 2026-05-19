@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>BTS Army Cultural Fest Enrollment</title>
+</head>
+<body>
+
+    <header id="main-header">
+        <nav>
+            <a href="#home">Home</a> | 
+            <a href="#registration">Registration</a>
+        </nav>
+    </header>
+
+    <div id="home">
+        <section>
+            <article>
+                <h1>Purple Horizon: Cultural Fest 2026</h1>
+                <p>Location: Forum Vijaya Mall, Vadapalani, Chennai, India | Enrollment for 18+ only</p>
+                <hr>
+                <p>
+                    The 2026 Cultural Fest is a <b>monumental gathering</b> for the BTS Army. This event is 
+                    designed to celebrate the <i>artistic and cultural impact</i> of the group through various 
+                    block-level workshops and performances. We invite all members to showcase their <u>unique talents</u> 
+                    and share their journey with the global community.
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <section id="registration">
+        <form action="#" method="post">
+            <h3>Enrollment Form</h3>
+
+            <div>
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div>
+                <label for="age">Age (Must be 18+)</label><br>
+                <input type="number" id="age" name="age" min="18" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender</label><br>
+                <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="non-binary">Non-binary</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="12345-67890">
+            </div>
+
+            <div>
+                <label for="alt_phone">Alternate Phone Number</label><br>
+                <input type="tel" id="alt_phone" name="alt_phone" placeholder="Emergency contact">
+            </div>
+
+            <div>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div>
+                <label for="country">Country</label><br>
+                <input type="text" id="country" name="country" required>
+            </div>
+
+            <div>
+                <label>Do you have a BTS Army Membership?</label><br>
+                <input type="radio" id="yes" name="membership" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="membership" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <div>
+                <label for="army_year">What year did you join the BTS Army?</label><br>
+                <input type="number" id="army_year" name="army_year" min="2013" max="2026" placeholder="YYYY">
+            </div>
+
+            <div>
+                <label for="skills">Your Skills (e.g., Dancing, Singing, Art)</label><br>
+                <input type="text" id="skills" name="skills" placeholder="List your talents">
+            </div>
+
+            <div>
+                <label for="discovery">How did you first come to know about BTS?</label><br>
+                <textarea id="discovery" name="discovery" rows="3" placeholder="Share your story..."></textarea>
+            </div>
+
+            <div>
+                <label for="event_type">Interest in Events</label><br>
+                <select id="event_type" name="event_type">
+                    <option value="solo">Solo Events</option>
+                    <option value="group">Group Events</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Preferred Participation Date (2026)</label><br>
+                <input type="radio" id="date1" name="event_date" value="june_2">
+                <label for="date1">June 2nd</label>
+                <input type="radio" id="date2" name="event_date" value="june_3">
+                <label for="date2">June 3rd</label>
+            </div>
+
+            <br>
+            <button type="submit">SUBMIT REGISTRATION</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Purple Horizon Fest | <span><a href="#main-header">Back to top</a></span></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder Form</title>
+</head>
+<body>
+
+    <h2>Resume Builder Form</h2>
+
+    <form>
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname"><br><br>
+
+            <label>Email Address:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob"><br><br>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="4" cols="30"></textarea><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Education Details -->
+        <fieldset>
+            <legend>Education Details</legend>
+
+            <label>Highest Qualification:</label><br>
+            <select name="qualification">
+                <option value="">--Select Qualification--</option>
+                <option value="highschool">High School</option>
+                <option value="diploma">Diploma</option>
+                <option value="ug">Undergraduate</option>
+                <option value="pg">Postgraduate</option>
+            </select>
+            <br><br>
+
+            <label>College / University Name:</label><br>
+            <input type="text" name="college"><br><br>
+
+            <label>Year of Passing:</label><br>
+            <input type="number" name="year"><br><br>
+
+            <label>Percentage / CGPA:</label><br>
+            <input type="text" name="marks"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+
+            <input type="checkbox" name="skills" value="HTML"> HTML<br>
+            <input type="checkbox" name="skills" value="CSS"> CSS<br>
+            <input type="checkbox" name="skills" value="JavaScript"> JavaScript<br>
+            <input type="checkbox" name="skills" value="Python"> Python<br>
+            <input type="checkbox" name="skills" value="Java"> Java<br><br>
+
+            <label>Other Skills:</label><br>
+            <textarea name="otherskills" rows="3" cols="30"></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Experience -->
+        <fieldset>
+            <legend>Experience</legend>
+
+            <label>Fresher / Experienced:</label><br>
+            <input type="radio" name="experience_type" value="Fresher"> Fresher
+            <input type="radio" name="experience_type" value="Experienced"> Experienced
+            <br><br>
+
+            <label>Company Name:</label><br>
+            <input type="text" name="company"><br><br>
+
+            <label>Job Role:</label><br>
+            <input type="text" name="jobrole"><br><br>
+
+            <label>Years of Experience:</label><br>
+            <input type="number" name="years"><br><br>
+
+            <label>Work Description:</label><br>
+            <textarea name="workdescription" rows="4" cols="30"></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <!-- File Upload -->
+        <fieldset>
+            <legend>Upload Resume</legend>
+
+            <label>Choose Resume File:</label><br>
+            <input type="file" name="resume"><br><br>
+
+            <label>Upload Profile Photo:</label><br>
+            <input type="file" name="photo">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit Resume">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>

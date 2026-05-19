@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Form</title>
+</head>
+<body>
+
+    <h2>College Admission Form</h2>
+
+    <form>
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Course Details -->
+        <fieldset>
+            <legend>Course Selection</legend>
+
+            <label>Select Department:</label><br>
+
+            <select name="department">
+
+                <optgroup label="Engineering Courses">
+                    <option value="cse">Computer Science Engineering</option>
+                    <option value="ece">Electronics and Communication</option>
+                    <option value="mech">Mechanical Engineering</option>
+                    <option value="civil">Civil Engineering</option>
+                </optgroup>
+
+                <optgroup label="Arts and Science Courses">
+                    <option value="bsc_cs">B.Sc Computer Science</option>
+                    <option value="bcom">B.Com</option>
+                    <option value="ba_english">B.A English</option>
+                    <option value="bba">BBA</option>
+                </optgroup>
+
+            </select>
+
+            <br><br>
+
+            <label>Preferred Shift:</label><br>
+
+            <select name="shift">
+                <option value="">--Select Shift--</option>
+                <option value="morning">Morning</option>
+                <option value="evening">Evening</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Address Details -->
+        <fieldset>
+            <legend>Address Information</legend>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="5" cols="30"></textarea>
+            <br><br>
+
+            <label>City:</label><br>
+            <input type="text" name="city"><br><br>
+
+            <label>State:</label><br>
+            <input type="text" name="state"><br><br>
+
+            <label>Pincode:</label><br>
+            <input type="number" name="pincode"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
