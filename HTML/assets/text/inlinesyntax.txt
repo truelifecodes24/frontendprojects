@@ -1,0 +1,376 @@
+
+INLINE CSS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+1. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+2. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+3. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+4. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+
+5. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+
+6. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+
+7. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+
+8. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+
+9. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+
+10. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+
+11. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+
+12. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+
+13. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+14. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+
+15. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+16. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+17. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+18. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+19. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+20. <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+21. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+
+22.  <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+23. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+
+24.  <div style ="background-color:pink; color:black;">
+<h1 style = "background-color:green;">
+</div>
+
+25. <div style ="background-color:blue; color:white;">
+<h1 style = "background-color:black;">
+</div>
+
+
+External CSS:
+
+selector {
+    property: value;
+}
+
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+selector {
+    property: value;
+}
+
+1. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+2. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+
+3. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+
+4. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+
+5. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+
+
+6. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+7. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+
+
+8. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+9. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+
+10. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+11. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+
+
+12. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+13. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+
+14. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+15. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+
+16. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+17. h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+
+
+18. h2 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
