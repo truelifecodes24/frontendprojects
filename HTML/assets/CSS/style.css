@@ -3,9 +3,36 @@ body {
     font-family: Arial;
 }
 
+div{
+        background-color: rgb(88, 210, 172);
+
+}
+
+.highlight{
+background-color: rgb(188, 116, 69);
+
+}
+
 h1 {
     color: blue;
     text-align: center;
+}
+
+.heading {
+    background-color: pink;
+    color: red;
+}
+
+.head{
+background-color: rgb(158, 121, 232);
+    color: rgb(221, 221, 52);
+
+}
+
+.para{
+color: purple;
+font-size: 18px;
+
 }
 
 p {
