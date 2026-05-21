@@ -9,18 +9,18 @@ div{
 }
 
 .highlight{
-background-color: rgb(188, 116, 69);
+background-color: rgb(176, 138, 114);
 
 }
 
 h1 {
-    color: blue;
+    color: rgb(74, 74, 173);
     text-align: center;
 }
 
 .heading {
     background-color: pink;
-    color: red;
+    color: rgb(227, 142, 142);
 }
 
 .head{
@@ -36,6 +36,6 @@ font-size: 18px;
 }
 
 p {
-    color: green;
+    color: rgb(213, 123, 207);
     font-size: 18px;
 }
