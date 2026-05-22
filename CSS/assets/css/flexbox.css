@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.outerbox{
+    background-color:blueviolet;
+    color:aqua;
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    gap:30px;
+}
+
+.innerbox{
+    width:250px;
+    height:250px;
+    background-color:aqua;
+    color:black;
+    text-align:center;
+
+}
