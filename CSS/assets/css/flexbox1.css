@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 .outerbox{
-    background-color:rgb(56, 12, 157);
+    background-color:rgb(105, 7, 130);
     color:aqua;
     display:flex;
     justify-content: center;
@@ -16,7 +16,7 @@
 .innerbox{
     width:250px;
     height:250px;
-    background-color:rgb(206, 224, 224);
+    background-color:rgb(198, 165, 44);
     display:flex;
 
     color:black;

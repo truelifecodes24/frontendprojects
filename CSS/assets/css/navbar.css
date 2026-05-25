@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar{
+    display: flex;
+
+    /* Logo left & menu right */
+    justify-content: space-between;
+
+    /* Center vertical alignment */
+    align-items: center;
+
+    background-color: black;
+    padding: 30px 70px;
+}
+
+/* Logo */
+.logo{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    list-style-type: none;;
+    gap: 20px;
+}
+
+/* Menu Links */
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover{
+    color: yellow;
+}
