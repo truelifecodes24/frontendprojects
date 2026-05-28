@@ -55,7 +55,7 @@ body{
 .hero{
     height: 85vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1400&auto=format&fit=crop');
+    url('../images/weightlift.avif');
     background-size: cover;
     background-position: center;
     display: flex;
