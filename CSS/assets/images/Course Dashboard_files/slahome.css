@@ -56,6 +56,18 @@ body{
     gap: 18px;
 }
 
+.icon-circle{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #64748b;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
 
 
 /* DROPDOWN */
