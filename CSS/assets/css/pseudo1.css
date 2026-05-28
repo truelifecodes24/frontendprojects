@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+.body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.ul{
+    list-style: none;
+}
+
+.html{
+scroll-behavior: smooth;
+}
+
+.a{
+    text-decoration: none;
+}
+.input{
+    outline:none;
+}
+.section
+{
+    min-height: 100vh;
+}
+
+.body{
+    overflow-x: hidden;
+}
