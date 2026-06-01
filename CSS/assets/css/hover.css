@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    padding:40px;
+    background:#f4f4f4;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.1);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}

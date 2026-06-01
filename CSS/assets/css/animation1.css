@@ -1,0 +1,21 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.btn{
+    padding:15px 40px;
+    border:none;
+    background:royalblue;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.btn:hover{
+    transform:scale(1.2);
+    background:crimson;
+}
