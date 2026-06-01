@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete CSS Tutorial</title>
+<link rel="stylesheet" href="../assets/css/csstutorial.css">
+</head>
+<body>
+
+<header>
+    <h1>Complete CSS Tutorial Website</h1>
+    <p>Learn CSS from Beginner to Advanced with Examples and Outputs</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#selectors">Selectors</a></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#boxmodel">Box Model</a></li>
+        <li><a href="#flexbox">Flexbox</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#animation">Animation</a></li>
+        <li><a href="#media">Media Query</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="intro">
+    <h2>1. What is CSS?</h2>
+    <p>
+        CSS (Cascading Style Sheets) is used to style HTML elements.
+        It controls colors, layouts, fonts, spacing, animations and responsiveness.
+    </p>
+
+    <h3>Example</h3>
+
+<pre>
+h1{
+    color:red;
+}
+</pre>
+
+<div class="output">
+    <h1 class="red">Hello CSS</h1>
+</div>
+</section>
+
+<section id="selectors">
+    <h2>2. CSS Selectors</h2>
+
+    <p><strong>Element Selector</strong> - Selects HTML tags.</p>
+
+<pre>
+p{
+ color:blue;
+}
+</pre>
+
+<div class="output">
+    <p class="blue">This text is blue.</p>
+</div>
+
+<p><strong>Class Selector</strong> - Selects using class name.</p>
+
+<pre>
+.box{
+ background:orange;
+}
+</pre>
+
+<div class="box-demo">
+    Class Selector Example
+</div>
+
+<p><strong>ID Selector</strong> - Selects using ID.</p>
+
+<pre>
+#title{
+ color:green;
+}
+</pre>
+
+<div id="title-demo">
+    ID Selector Example
+</div>
+
+</section>
+
+<section id="colors">
+    <h2>3. CSS Colors</h2>
+
+    <p>Colors can be applied using names, HEX, RGB and HSL values.</p>
+
+<pre>
+.red-box{
+ background:red;
+}
+
+.hex-box{
+ background:#3498db;
+}
+
+.rgb-box{
+ background:rgb(50,205,50);
+}
+</pre>
+
+<div class="color-container">
+    <div class="red-box">Red</div>
+    <div class="hex-box">HEX</div>
+    <div class="rgb-box">RGB</div>
+</div>
+
+</section>
+
+<section id="boxmodel">
+    <h2>4. CSS Box Model</h2>
+
+<p>
+Every element consists of:
+</p>
+
+<ul>
+    <li>Content</li>
+    <li>Padding</li>
+    <li>Border</li>
+    <li>Margin</li>
+</ul>
+
+<pre>
+.box{
+ padding:20px;
+ border:5px solid black;
+ margin:20px;
+}
+</pre>
+
+<div class="box-model">
+    Box Model Example
+</div>
+
+</section>
+
+<section id="flexbox">
+    <h2>5. CSS Flexbox</h2>
+
+<p>
+Flexbox helps align items horizontally and vertically.
+</p>
+
+<pre>
+.container{
+ display:flex;
+ justify-content:space-around;
+}
+</pre>
+
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+
+</section>
+
+<section id="grid">
+    <h2>6. CSS Grid</h2>
+
+<p>
+CSS Grid creates two-dimensional layouts.
+</p>
+
+<pre>
+.grid{
+ display:grid;
+ grid-template-columns:1fr 1fr 1fr;
+}
+</pre>
+
+<div class="grid-container">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</div>
+
+</section>
+
+<section id="animation">
+    <h2>7. CSS Animation</h2>
+
+<pre>
+@keyframes move{
+ from{
+  transform:translateX(0);
+ }
+ to{
+  transform:translateX(200px);
+ }
+}
+</pre>
+
+<div class="animate-box"></div>
+
+</section>
+
+<section id="media">
+    <h2>8. Media Queries</h2>
+
+<p>
+Media queries make websites responsive.
+</p>
+
+<pre>
+@media(max-width:768px){
+ body{
+  background:lightyellow;
+ }
+}
+</pre>
+
+<p>Resize the browser window to see responsiveness.</p>
+
+</section>
+
+<section>
+    <h2>Common CSS Properties</h2>
+
+<table>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>color</td>
+<td>Changes text color</td>
+</tr>
+
+<tr>
+<td>background</td>
+<td>Sets background color/image</td>
+</tr>
+
+<tr>
+<td>width</td>
+<td>Sets width</td>
+</tr>
+
+<tr>
+<td>height</td>
+<td>Sets height</td>
+</tr>
+
+<tr>
+<td>margin</td>
+<td>Outer spacing</td>
+</tr>
+
+<tr>
+<td>padding</td>
+<td>Inner spacing</td>
+</tr>
+
+<tr>
+<td>border</td>
+<td>Adds border</td>
+</tr>
+
+<tr>
+<td>display</td>
+<td>Controls layout</td>
+</tr>
+
+<tr>
+<td>position</td>
+<td>Controls positioning</td>
+</tr>
+
+<tr>
+<td>flex</td>
+<td>Flexbox layout</td>
+</tr>
+
+<tr>
+<td>grid</td>
+<td>Grid layout</td>
+</tr>
+
+<tr>
+<td>transform</td>
+<td>Rotate, scale, translate</td>
+</tr>
+
+<tr>
+<td>animation</td>
+<td>Add animations</td>
+</tr>
+
+<tr>
+<td>transition</td>
+<td>Smooth changes</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- CSS TYPES -->
+
+<section id="css-types">
+    <h2>CSS Types</h2>
+
+    <h3>Inline CSS</h3>
+    <p style="color:red;">This text uses Inline CSS.</p>
+
+    <h3>Internal CSS</h3>
+    <p class="internal-example">This text represents Internal CSS.</p>
+
+    <h3>External CSS</h3>
+    <p class="external-example">This text uses External CSS.</p>
+</section>
+
+<!-- SPECIFICITY -->
+
+<section id="specificity">
+    <h2>CSS Specificity</h2>
+
+    <p class="specificity-demo">
+        Class Selector Example
+    </p>
+
+    <p id="specificity-id">
+        ID Selector Example (Higher Priority)
+    </p>
+</section>
+
+<!-- BACKGROUND PROPERTIES -->
+
+<section id="background">
+    <h2>Background Properties</h2>
+
+    <div class="bg-color-demo">
+        Background Color Example
+    </div>
+
+    <div class="bg-image-demo">
+        Background Image Example
+    </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+
+<section id="typography">
+    <h2>Typography</h2>
+
+    <p class="font-family-demo">
+        Font Family Example
+    </p>
+
+    <p class="font-size-demo">
+        Font Size Example
+    </p>
+
+    <p class="font-weight-demo">
+        Font Weight Example
+    </p>
+
+    <p class="font-style-demo">
+        Font Style Example
+    </p>
+
+    <p class="text-transform-demo">
+        css tutorial website
+    </p>
+
+    <p class="letter-spacing-demo">
+        Letter Spacing Example
+    </p>
+</section>
+
+<!-- DISPLAY PROPERTIES -->
+
+<section id="display">
+    <h2>Display Properties</h2>
+
+    <h3>Block Elements</h3>
+
+    <div class="block-demo">
+        Block 1
+    </div>
+
+    <div class="block-demo">
+        Block 2
+    </div>
+
+    <h3>Inline Elements</h3>
+
+    <span class="inline-demo">
+        Inline 1
+    </span>
+
+    <span class="inline-demo">
+        Inline 2
+    </span>
+
+    <h3>Inline Block</h3>
+
+    <div class="inline-block-demo">
+        Inline Block 1
+    </div>
+
+    <div class="inline-block-demo">
+        Inline Block 2
+    </div>
+</section>
+
+<!-- PSEUDO CLASSES -->
+
+<section id="pseudo-class">
+    <h2>Pseudo Classes</h2>
+
+    <button class="hover-btn">
+        Hover Me
+    </button>
+
+    <br><br>
+
+    <input
+        type="text"
+        placeholder="Click Here"
+        class="focus-input">
+
+    <ul class="pseudo-list">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+</section>
+
+<!-- PSEUDO ELEMENTS -->
+
+<section id="pseudo-element">
+    <h2>Pseudo Elements</h2>
+
+    <p class="before-demo">
+        Text with Before Element
+    </p>
+
+    <p class="after-demo">
+        Text with After Element
+    </p>
+
+    <p class="first-letter-demo">
+        This paragraph demonstrates first letter styling.
+    </p>
+
+    <p class="first-line-demo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent suscipit magna sit amet neque ultrices,
+        ac pellentesque odio faucibus.
+    </p>
+</section>
+
+<!-- POSITION -->
+
+<section id="position">
+    <h2>Position Property</h2>
+
+    <div class="position-container">
+
+        <div class="relative-box">
+            Relative
+        </div>
+
+        <div class="absolute-box">
+            Absolute
+        </div>
+
+    </div>
+</section>
+
+<!-- TRANSITION -->
+
+<section id="transition">
+    <h2>Transition Example</h2>
+
+    <div class="transition-box">
+        Hover Me
+    </div>
+</section>
+
+<!-- TRANSFORM -->
+
+<section id="transform">
+    <h2>Transform Examples</h2>
+
+    <div class="transform rotate">
+        Rotate
+    </div>
+
+    <div class="transform scale">
+        Scale
+    </div>
+
+    <div class="transform skew">
+        Skew
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Complete CSS Tutorial Website</p>
+</footer>
+
+</body>
+</html>

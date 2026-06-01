@@ -1,0 +1,476 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#111827;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    background:white;
+    margin:25px 0;
+    padding:20px;
+    border-radius:10px;
+}
+
+h2{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+pre{
+    background:#272822;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+    margin:15px 0;
+}
+
+.output{
+    border:2px dashed gray;
+    padding:15px;
+}
+
+.red{
+    color:red;
+}
+
+.blue{
+    color:blue;
+}
+
+.box-demo{
+    background:orange;
+    padding:20px;
+    margin-top:10px;
+}
+
+#title-demo{
+    color:green;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.color-container{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.red-box,
+.hex-box,
+.rgb-box{
+    width:120px;
+    height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-weight:bold;
+}
+
+.red-box{
+    background:red;
+}
+
+.hex-box{
+    background:#3498db;
+}
+
+.rgb-box{
+    background:rgb(50,205,50);
+}
+
+.box-model{
+    background:gold;
+    padding:20px;
+    border:5px solid black;
+    margin:20px;
+}
+
+.flex-container{
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+}
+
+.flex-container div{
+    background:tomato;
+    color:white;
+    padding:30px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.grid-container div{
+    background:purple;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.animate-box{
+    width:100px;
+    height:100px;
+    background:red;
+    animation:move 3s infinite alternate;
+}
+
+@keyframes move{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(300px);
+    }
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+table th{
+    background:#1e3a8a;
+    color:white;
+}
+
+
+/* ==========================
+   CSS TYPES
+========================== */
+
+.internal-example{
+    color:blue;
+}
+
+.external-example{
+    color:green;
+}
+
+/* ==========================
+   SPECIFICITY
+========================== */
+
+.specificity-demo{
+    color:orange;
+}
+
+#specificity-id{
+    color:red;
+    font-weight:bold;
+}
+
+/* ==========================
+   BACKGROUND PROPERTIES
+========================== */
+
+.bg-color-demo{
+    background-color:gold;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.bg-image-demo{
+    background-image:url("../images/shells.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+}
+
+/* ==========================
+   TYPOGRAPHY
+========================== */
+
+.font-family-demo{
+    font-family:Georgia, serif;
+}
+
+.font-size-demo{
+    font-size:30px;
+}
+
+.font-weight-demo{
+    font-weight:bold;
+}
+
+.font-style-demo{
+    font-style:italic;
+}
+
+.text-transform-demo{
+    text-transform:uppercase;
+}
+
+.letter-spacing-demo{
+    letter-spacing:5px;
+}
+
+/* ==========================
+   DISPLAY PROPERTIES
+========================== */
+
+.block-demo{
+    display:block;
+    background:tomato;
+    color:white;
+    padding:15px;
+    margin:10px 0;
+}
+
+.inline-demo{
+    display:inline;
+    background:blue;
+    color:white;
+    padding:10px;
+}
+
+.inline-block-demo{
+    display:inline-block;
+    width:150px;
+    background:green;
+    color:white;
+    padding:20px;
+    margin:10px;
+}
+
+/* ==========================
+   PSEUDO CLASSES
+========================== */
+
+.hover-btn{
+    padding:15px 25px;
+    border:none;
+    background:#3498db;
+    color:white;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.hover-btn:hover{
+    background:red;
+}
+
+.focus-input{
+    padding:10px;
+}
+
+.focus-input:focus{
+    border:3px solid blue;
+    outline:none;
+}
+
+.pseudo-list li:first-child{
+    color:red;
+    font-weight:bold;
+}
+
+.pseudo-list li:last-child{
+    color:green;
+    font-weight:bold;
+}
+
+.pseudo-list li:nth-child(2){
+    color:blue;
+    font-weight:bold;
+}
+
+/* ==========================
+   PSEUDO ELEMENTS
+========================== */
+
+.before-demo::before{
+    content:"★ ";
+    color:gold;
+}
+
+.after-demo::after{
+    content:" ✔";
+    color:green;
+}
+
+.first-letter-demo::first-letter{
+    font-size:40px;
+    color:red;
+    font-weight:bold;
+}
+
+.first-line-demo::first-line{
+    color:blue;
+    font-weight:bold;
+}
+
+/* ==========================
+   POSITION PROPERTY
+========================== */
+
+.position-container{
+    position:relative;
+    height:250px;
+    border:2px solid #333;
+}
+
+.relative-box{
+    position:relative;
+    top:20px;
+    left:20px;
+
+    width:120px;
+    height:120px;
+
+    background:orange;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.absolute-box{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    width:120px;
+    height:120px;
+
+    background:purple;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ==========================
+   TRANSITION
+========================== */
+
+.transition-box{
+    width:200px;
+    height:100px;
+
+    background:#3498db;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:0.5s;
+}
+
+.transition-box:hover{
+    background:red;
+    transform:scale(1.1);
+}
+
+/* ==========================
+   TRANSFORM
+========================== */
+
+.transform{
+    width:150px;
+    height:150px;
+
+    background:teal;
+    color:white;
+
+    margin:20px;
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.rotate:hover{
+    transform:rotate(45deg);
+}
+
+.scale:hover{
+    transform:scale(1.3);
+}
+
+.skew:hover{
+    transform:skew(20deg);
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .color-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .flex-container{
+        flex-direction:column;
+    }
+
+    .grid-container{
+        grid-template-columns:1fr;
+    }
+}
