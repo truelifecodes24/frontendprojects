@@ -1,0 +1,184 @@
+1. What is Bootstrap?
+
+Bootstrap is a free, open-source front-end framework used to build responsive and mobile-friendly websites quickly. It provides ready-made CSS classes and JavaScript components, so developers don't need to write everything from scratch.
+
+
+2. What are the important classes in Bootstrap?
+
+1. Container Classes - Used to wrap website content.
+
+| Class           | Description                      |
+| --------------- | -------------------------------- |
+| container       | Fixed-width responsive container |
+| container-fluid | Full-width container             |
+
+
+
+2. Grid System Classes
+
+Bootstrap uses a 12-column grid system.
+
+Important Classes:
+
+| Class    | Meaning                     |
+| -------- | --------------------------- |
+| row      | Creates a row               |
+| col      | Automatic column            |
+| col-6    | Takes 6 columns             |
+| col-md-6 | 6 columns on medium screens |
+| col-lg-4 | 4 columns on large screens  |
+
+
+3. Button Classes
+
+Common Button Classes:
+
+| Class       | Color      |
+| ----------- | ---------- |
+| btn-primary | Blue       |
+| btn-success | Green      |
+| btn-danger  | Red        |
+| btn-warning | Yellow     |
+| btn-info    | Light Blue |
+| btn-dark    | Black      |
+| btn-light   | White      |
+
+
+4. Text Classes
+
+Text Alignment
+| Class       |
+| ----------- |
+| text-start  |
+| text-center |
+| text-end    |
+
+Text Colors
+
+| Class        |
+| ------------ |
+| text-primary |
+| text-success |
+| text-danger  |
+| text-warning |
+| text-info    |
+| text-dark    |
+
+
+5. Background Color Classes
+
+| Class      |
+| ---------- |
+| bg-success |
+| bg-primary |
+| bg-danger  |
+| bg-warning |
+| bg-info    |
+| bg-dark    |
+| bg-light   |
+
+
+
+6. Spacing Classes
+Margin
+Padding
+
+| Class      | Meaning             |
+| ---------- | ------------------- |
+| m-1 to m-5 | Margin              |
+| p-1 to p-5 | Padding             |
+| mt-3       | Margin Top          |
+| mb-3       | Margin Bottom       |
+| ms-3       | Margin Start (Left) |
+| me-3       | Margin End (Right)  |
+
+7. Navbar Classes
+| Class            |
+| ---------------- |
+| navbar           |
+| navbar-brand     |
+| navbar-nav       |
+| nav-item         |
+| nav-link         |
+| navbar-expand-lg |
+
+
+8. Card Classes
+
+| Class        |
+| ------------ |
+| card         |
+| card-body    |
+| card-title   |
+| card-text    |
+| card-img-top |
+
+
+9. Form Classes
+
+| Class        |
+| ------------ |
+| form-control |
+| form-label   |
+| form-select  |
+| form-check   |
+
+
+10. Display Classes
+
+Used to show/hide elements.
+
+| Class    | Meaning |
+| -------- | ------- |
+| d-none   | Hide    |
+| d-block  | Block   |
+| d-flex   | Flexbox |
+| d-inline | Inline  |
+
+
+11. Flexbox Classes
+
+| Class                   |
+| ----------------------- |
+| d-flex                  |
+| justify-content-center  |
+| justify-content-between |
+| align-items-center      |
+| flex-column             |
+
+
+12. Responsive Classes
+
+Bootstrap supports different screen sizes:
+
+| Size        | Prefix  |
+| ----------- | ------- |
+| Extra Small | col     |
+| Small       | col-sm  |
+| Medium      | col-md  |
+| Large       | col-lg  |
+| Extra Large | col-xl  |
+| XXL         | col-xxl |
+
+
+Most Frequently Used Bootstrap Classes:
+
+container
+container-fluid
+row
+col
+btn
+btn-primary
+card
+card-body
+navbar
+nav-link
+form-control
+text-center
+bg-primary
+d-flex
+justify-content-center
+align-items-center
+m-3
+p-3
+
