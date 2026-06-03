@@ -64,7 +64,7 @@ nav a:hover::after{
     background:
     linear-gradient(rgba(0,0,0,.5),
     rgba(0,0,0,.5)),
-    url("https://picsum.photos/1600/900");
+    url("../images/academybg.png");
     background-size:cover;
     background-position:center;
 
@@ -75,9 +75,9 @@ nav a:hover::after{
     color:white;
 }
 
-.hero-content h1{
-    font-size:60px;
-    margin-bottom:20px;
+.hero-content p{
+    
+    margin-bottom:60px;
 }
 
 .hero-content button{
