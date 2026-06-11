@@ -1,0 +1,30 @@
+JavaScript Data Types:
+
+JavaScript data types define the kind of value a variable can store.
+
+Primitive Data Types
+1) String
+Used to store text or characters.
+Example: "Hello", 'JavaScript'
+2) Number
+Used to store numeric values (integers and decimals).
+Example: 10, 25.5
+3) Boolean
+Represents logical values.
+Possible values: true or false
+4) Undefined
+A variable that has been declared but not assigned a value.
+5) Null
+Represents an intentional absence of value.
+6) BigInt
+Used to store very large integers beyond the safe limit of the Number type.
+7) Symbol
+Used to create unique identifiers.
+Non-Primitive (Reference) Data Types
+1) Object
+Stores data in key-value pairs.
+Used to represent real-world entities.
+2) Array
+Used to store multiple values in a single variable.
+3) Function
+A block of reusable code designed to perform a specific task.
