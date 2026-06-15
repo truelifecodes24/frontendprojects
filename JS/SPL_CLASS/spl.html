@@ -1,0 +1,92 @@
+<script>
+    let arr = [1, 2, 3, 5];
+
+for (let i = 1; i <= arr.length + 1; i++) {
+    if (!arr.includes(i)) {
+        console.log(i);
+    }
+}
+let str = "programming";
+
+for (let char of str) {
+    if (str.indexOf(char) === str.lastIndexOf(char)) {
+        console.log(char);
+        break;
+    }
+}
+let string = "javascript";
+let seen = [];
+
+for (let char of string) {
+    if (seen.includes(char)) {
+        console.log(char);
+        break;
+    }
+    seen.push(char);
+}
+let array = [1, 0, 2, 0, 3, 4, 0];
+
+let result = array.filter(num => num !== 0);
+let zeros = array.filter(num => num === 0);
+console.log([...result, ...zeros]);
+let array1 = ["Vijay", "Ajith", "Vijay", "SK"];
+
+let count = {};
+
+for (let name of array1) {
+    count[name] = (count[name] || 0) + 1;
+}
+
+for (let key in count) {
+    console.log(key + " = " + count[key]);
+}
+let array2 = [1, 2, 2, 3, 2, 4, 1];
+
+let count1 = {};
+let max = 0;
+let frequent;
+
+for (let num of array2) {
+    count1[num] = (count1[num] || 0) + 1;
+
+    if (count1[num] > max) {
+        max = count1[num];
+        frequent = num;
+    }
+}
+let array3 = [1, 2, 2, 3, 2, 4, 1];
+
+let count2 = {};
+let max1 = 0;
+let frequent1;
+
+for (let num of array3) {
+    count2[num] = (count2[num] || 0) + 1;
+
+    if (count2[num] > max1) {
+        max1 = count2[num];
+        frequent1 = num;
+    }
+}
+
+console.log(frequent1);
+let array4 = [1, 2, 3, 4, 5, 6];
+
+let even = array4.filter(num => num % 2 === 0);
+let odd = array4.filter(num => num % 2 !== 0);
+
+console.log("Even :", even);
+console.log("Odd :", odd);
+let hero = ["Vijay", "Ajith", "Suriya", "SK"];
+
+let first = hero.shift();
+arr.push(first);
+
+console.log(arr);
+let heros = ["Vijay", "Ajith", "Sivakarthikeyan", "Dhanush"];
+
+arr.sort((a, b) => b.length - a.length);
+
+console.log(arr[1]);
+
+</script>
