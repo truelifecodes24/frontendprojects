@@ -1,7 +1,269 @@
 <script>
-const heros = ["Vijay","Ajith","Suriya","SK"]
-for (let i=0; i<heros.length;i++){
-    console.log(heros[i]);
-}
+
+    //Set - 1 Tasks
+    console.log('Task-1:Create an array of Tamil heroes-Print all hero names using a loop.');
+    let arrayOne = ["Vijay", "Ajith", "Surya", "SK"]
+    console.log('Array one=', arrayOne);
+    let arrayTwo = []
+    let index = 0
+    for (let i = 0; i <= arrayOne.length - 1; i++) {
+        arrayTwo[index] = arrayOne[i]
+        index++
+    }
+    console.log('Array two=', arrayTwo);
+
+
+
+    console.log('Task-2:Create an array of movie collections-Find the highest collection.');
+    let movieCollection = [200, 500, 800, 400, 600]
+    console.log('Movie collection =', movieCollection);
+    let highest = movieCollection[0]
+    for (let j = 1; j <= movieCollection.length - 1; j++) {
+        if (highest < movieCollection[j]) {
+            highest = movieCollection[j]
+        }
+    }
+    console.log('Highest =', highest);
+
+
+
+    console.log('Task-3:Create an array of movie collections-Find the lowest collection.');
+    let moviesCollection = [200, 500, 800, 400, 600]
+    console.log('Movie collection =', moviesCollection);
+    let lowest = moviesCollection[0]
+    for (let j = 1; j <= moviesCollection.length - 1; j++) {
+        if (lowest > moviesCollection[j]) {
+            lowest = moviesCollection[j]
+        }
+    }
+    console.log('Lowest =', lowest);
+
+
+
+    console.log('Task-4:Create an array of movie collections-Find total collection');
+    let arr = [200, 500, 800, 400, 600]
+    sum = 0
+    for (k = 0; k < arr.length; k++) {
+        sum = sum + arr[k]
+    }
+    console.log('Total =', sum);
+
+
+
+    console.log('Task-5:Create an array of movie collections-Find the average collection.');
+    avg = sum / arr.length
+    console.log('Average', avg);
+
+
+    console.log('Task-6:Create an array of Tamil heroes-Print all hero names in reverse order.');
+    let arrayActor = ["Vijay", "Ajith", "Surya", "SK"]
+    console.log('Heros Name', arrayActor);
+    let arrayReverse = []
+    let indexPos = 0
+    for (let m = arrayActor.length - 1; m >= 0; m--) {
+        arrayReverse[indexPos] = arrayActor[m]
+        indexPos++
+    }
+    console.log('Reversed Heros Name', arrayReverse);
+
+
+    console.log('Task-7:Create an array of fruits-Search fruit');
+    let fruits = ["Apple", "Mango", "Orange", "Banana"]
+    let fruitSearch = "Mango"
+    for (n = 0; n < fruits.length; n++) {
+        if (fruitSearch == fruits[n]) {
+            console.log("Fruit Found");
+        }
+        else {
+            console.log("Not found");
+
+        }
+    }
+
+
+    console.log('Task-8:Create an array of fruits-Count fruits');
+    let fruit = ["Apple", "Mango", "Orange", "Banana"]
+    l = 0
+    for (n = 0; n < fruits.length; n++) {
+        l++
+    }
+    console.log('Fruits Count=', l);
+
+
+
+    console.log('Task-9:Create an array of Tamil heroes-Find the longest hero name.');
+    let herosArray = ["Vijay", "Ajith", "Sivakarthikeyan", "SK"];
+
+    let longest = herosArray[0];
+
+    for (let i = 1; i < herosArray.length; i++) {
+        if (herosArray[i].length > longest.length) {
+            longest = herosArray[i];
+        }
+    }
+    console.log('Longest word in a Array =',longest);
+
+
+    //SET - 2 Tasks
+
+        console.log('Task 1 - Palindrome Check');
+    const palindrome=(movie)=>{
+        let reverse=""
+        for(let i=movie.length-1;i>=0;i--){
+            reverse+=movie[i]    
+        }
+        console.log(reverse);
+        
+        if(movie===reverse){
+            console.log('palindrome');
+        }
+        else{
+            console.log('Not a palindrome');    
+        }
+    }
+    palindrome("LEVEL")
+
+
+    console.log('Task 2 - Reverse String');
+    const reverseString=(string)=>{
+        let r=""
+        for(i1=string.length-1;i1>=0;i1--){
+            r+=string[i1]
+        }
+        console.log(r);    
+    }
+    reverseString("vijay")
+
+
+    console.log('Task 3 - Fibonacci Series');
+    let a=0
+    let b=1
+    console.log(a);
+    console.log(b); 
+    const fibonoci=(num1)=>{
+      for(let f1=1;f1<num1-1;f1++){
+        let c=a+b
+        console.log(c);
+        a=b
+        b=c 
+      }
+    }
+    fibonoci(10)
+
+
+    console.log('Task 4 - Count Vowels');
+    const vowels=(name)=>{
+        let v1=0
+        for(let v=0;v<name.length;v++){
+            if(name[v]=="a" || name[v]=="e" || name[v]=="i" || name[v]=="o" || name[v]=="u" || name[v]=="A" || name[v]== "E" || name[v]=="I" || name[v]=="O" || name[v]=="U"){
+                console.log("Vowels = ",name[v]);
+                v1++
+                
+            }
+        }
+        console.log('Vowel Count',v1);
+    }
+    vowels("SURIYA")
+
+
+    
+    console.log('Task 5 - Count Character Frequency');
+    const charFrequency=(word,char)=>{
+        count=0
+        for(c=0;c<word.length;c++){
+            if(word[c]==char){
+               count++
+            }
+        }
+        console.log('Character Frequency',count);
+        
+    }
+    charFrequency("nivedaaa","a")
+
+
+    console.log('Task 6 -Anagram Check');
+    const anagram=(word1,word2)=>{
+        let count=0
+        for(let j=0;j<word1.length;j++){
+            for(let k=0;k<word2.length;k++){
+                if(word1[j]==word2[k]){
+                    count++
+                }
+            }
+        }
+        if(count==word1.length){
+            console.log("These words are Anagram","Word1 =",word1,"Word2 =",word2);   
+        }
+        else{
+            console.log("These words are not Anagram","Word1 =",word1,"Word2 =",word2);    
+        }
+    }
+    anagram("listen","silent")
+    
+
+    console.log('Task 7 -Armstrong Number');
+    const amstrong=(num)=>{
+        let h= Math.floor(num/100)
+        let r=num%100
+        let t= Math.floor(r/10)
+        let o=r%10
+        let s=(h**3)+(t**3)+(o**3)
+        console.log(s);
+        
+        if(num==s){
+            console.log(num,"is a Amstrong number");    
+        }
+        else{
+            console.log(num,"is not a Amstrong number");  
+        }
+    }
+    amstrong(153)
+
+
+    console.log('Task 8 -Prime Number');
+    const prime=(number)=>{
+        let p=true
+        for(let p1=2;p1<=Math.floor(number/2);p1++){
+            if(number%p1==0){
+                p=false
+                break;
+            }
+        }
+        if(p){
+            console.log("prime");
+        }
+        else{
+            console.log("Not a prime"); 
+        }
+    }
+    prime(17)
+
+
+    console.log('Task 9 -Factorial');
+    const fact=(findNum)=>{
+        let prod=1
+        for(let fac=1;fac<=findNum;fac++){
+            prod=fac*prod
+        }
+        console.log("Factorial value for ",findNum," is ",prod);
+    }
+    fact(5)
+
+
+    console.log('Task 9 -5-Digit Number Reverse');
+    const reverse=(giveNum)=>{
+        let tt=Math.floor(giveNum/10000)
+        let r1=giveNum%10000
+        let th=Math.floor(r1/1000)
+        let r2=r1%1000
+        let h1=Math.floor(r2/100)
+        let r3=r2%100
+        let t1=Math.floor(r3/10)
+        let o1=r3%10
+        let rev=o1*10000+t1*1000+h1*100+th*10+tt*1
+        console.log(rev);   
+    }
+    reverse(12345)
+
 
 </script>
