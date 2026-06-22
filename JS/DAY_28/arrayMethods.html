@@ -1,0 +1,95 @@
+<script>
+    console.log('Task 1 - Push & Pop (Movie List)');
+    let movie = ["GOAT", "Leo", "Master"]
+    console.log('before push & pull', movie);
+    movie.push("Ghilli");
+    console.log('After push', movie);
+    movie.pop();
+    console.log('After pull', movie);
+
+    console.log('Task 2 - Shift & Unshift');
+    let heros = ["Ajith", "Suriya", "SK"]
+    console.log('before Shift & Unshift', heros);
+    heros.unshift("Vijay")
+    console.log('After Unshift', heros);
+    heros.shift()
+    console.log('After shift', heros);
+
+    console.log('Task 3 - Fruits Management');
+    let fruits = ["Apple", "Mango", "Orange"]
+    console.log('before push & pull', fruits);
+    fruits.push("Banana", "Grapes")
+    console.log('After push', fruits);
+    fruits.pop()
+    console.log('After push', fruits);
+    fruits.unshift("Pineapple")
+    console.log('After Unshift', fruits);
+    fruits.shift()
+    console.log('After shift', fruits);
+
+    console.log('Task 4 - Student Object');
+    let studentObj = {
+        name: "Sudhan",
+        course: "MERN",
+        city: "Chennai"
+    }
+    console.log('Student Name:', studentObj.name);
+    console.log('Course:', studentObj.course);
+    console.log('City:', studentObj.city);
+    console.log('Student Name:', studentObj["name"]);
+    console.log('Course:', studentObj["course"]);
+    console.log('City:', studentObj["city"]);
+
+
+    console.log('Task 5 - Mobile Store (Array of Objects)');
+    let mobileStore = [
+        {
+            brand: "Samsung",
+            price: 20000
+        },
+
+        {
+            brand: "iPhone",
+            price: 80000
+        },
+
+        {
+            brand: "OnePlus",
+            price: 35000
+        }
+    ]
+    for (let i = 0; i < mobileStore.length; i++) {
+        console.log(mobileStore[i].brand, "-", mobileStore[i].price);
+    }
+
+
+    console.log('Task 6 - Movie Collection Report (Array of Objects)');
+    let movieCollection = [
+        {
+            movie: "GOAT",
+            collection: 800
+        },
+
+        {
+            movie: "Leo",
+            collection: 600
+        },
+
+        {
+            movie: "Master",
+            collection: 500
+        }
+    ]
+    let total=0
+    let highest=movieCollection[0]
+    for(let i=0;i<movieCollection.length;i++){
+        total+=movieCollection[i].collection
+        if(highest<movieCollection[i].collection){
+            highest=movieCollection[i]
+        }
+    }
+    console.log('Total Collection ',total);
+    console.log('Highest Collection',highest.collection);
+    console.log('Movie Name with Highest Collection ',highest.collection,highest.movie);
+    
+</script>
