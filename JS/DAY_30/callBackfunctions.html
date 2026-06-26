@@ -1,0 +1,123 @@
+<script>
+    console.log('Scope tasks-Task 1');
+    let hero = "Vijay";
+    const access = () => {
+        if (hero) {
+            for (let i = 0; i <= 2; i++) {
+                console.log("Hero name : ", hero);
+            }
+        }
+    }
+    access()
+
+    console.log('Scope tasks-Task 2');
+    const movie = () => {
+        let collection = 800;
+        console.log(collection);
+    }
+  
+
+    console.log('Scope tasks-Task 3');
+    if (true) {
+        var actor1 = "Ajith";
+        let actor2 = "Vijay";
+    }
+    console.log(actor1);
+    console.log(actor2);
+    
+    
+    console.log('Task 4-Named Function Tasks');
+    const display=()=>{
+        console.log("GOAT Movie Released");
+    }
+    const showMovie=(dis)=>{
+        dis()
+    }
+    showMovie(display)
+
+    console.log('Task 5-Create a named arrow function');
+    const add = (a,b)=>{
+           let c=a+b
+           console.log("Sum : ",c);
+    }
+    const show=(cb)=>{
+        console.log("adding...");
+        
+        cb()  
+    }
+    show(add(45,60))
+
+
+    console.log('Task 6-Anonymous Function Tasks');
+    const datas=(callBack)=>{
+        console.log("Booking Confirmed"); 
+        callBack()   
+    }
+    datas(()=>{
+       console.log("print");
+       
+    })
+
+    console.log('Task 7-Anonymous Function Tasks');
+    const execute=(started)=>{
+        console.log("Booking Confirmed"); 
+        started()   
+    }
+    execute(()=>{
+        console.log("Time out"); 
+    })
+    setTimeout(()=>{
+       console.log("print"); 
+    },1000)
+
+    console.log('Task 8-Callback Function Tasks');
+    const processOrder=(call)=>{
+        console.log("Order Received"); 
+        call()   
+    }
+    processOrder(()=>{
+       console.log("Order Delivered");
+       
+    })
+
+
+
+    console.log('Task 9-Create a counter closure.');
+    const counter=()=>{
+        let count=0
+        const increment=()=>{
+            count++
+            console.log(count);
+        }
+        return increment
+    }
+    const display=counter()
+    for(let i=0;i<=5;i++){
+         display()
+    }
+
+    console.log('Task 10-Create a banking closure.');
+    const balance=()=>{
+        let initial=5000
+        let deposit=1000
+        let withdraw=500
+        return{
+            depositMoney:()=>{
+            initial+=deposit
+            console.log("current Balance",initial);
+            },
+            withdrawMoney:()=>{
+            initial-=withdraw
+            console.log("Final Balance",initial);
+            }
+        }
+
+    }
+    const final=balance()
+    final.depositMoney()
+    final.withdrawMoney()
+    
+
+
+
+</script>

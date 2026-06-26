@@ -1,0 +1,125 @@
+<script>
+    console.log('Task 1 - push() Method');
+    const course = (courseArr) => {
+        console.log('Before push', courseArr);
+        const showPush = courseArr.push("React", "Node.js")
+        console.log("Push operation gives array's length after push", showPush);
+        console.log('After push', courseArr);
+    }
+    course(["HTML", "CSS", "JavaScript"])
+
+
+    console.log('Task 2 - pop() Method',);
+    const frontendCourse = (arr) => {
+        console.log('Before pop', arr);
+        const showPop = arr.pop()
+        console.log("Removed element :", showPop);
+        console.log('After pop', arr);
+    }
+    frontendCourse(["HTML", "CSS", "JavaScript", "React"])
+
+    console.log('Task 3 - shift() Method');
+    const fruits = (fruitArr) => {
+        console.log('Before shift', fruitArr);
+        const showShift = fruitArr.shift()
+        console.log("Removed first fruit:", showShift);
+        console.log("After shift", fruitArr);
+    }
+    fruits(["Apple", "Mango", "Orange", "Banana"])
+
+    console.log('Task 4 - unshift() Method');
+    const heros = (heroArr) => {
+        console.log('Before Unshift', heroArr);
+        const showUnshift = heroArr.unshift("Dhanush", "Vijay")
+        console.log("After unshift", heroArr);
+    }
+    heros(["Ajith", "Suriya", "SK"])
+
+    console.log('Task 5 - splice() Method');
+    const courseAvail = (courseArray) => {
+        console.log("Before splice", courseArray);
+        const showSplice = courseArray.splice(2, 1, "JavaScript")
+        console.log(showSplice);
+        console.log(" final array", courseArray);
+
+    }
+    courseAvail(["HTML", "CSS", "Bootstrap", "React"])
+
+    console.log('Task 6 - slice() Method');
+    const coursesHere = (courseArr1) => {
+        console.log('Original Array', courseArr1);
+        const showSlice = courseArr1.slice(2, 4)
+        console.log('New array', showSlice);
+    }
+    coursesHere(["HTML", "CSS", "JavaScript", "React", "Node"])
+
+    console.log('Task 7 - Object Looping');
+    const loop = () => {
+        let student = {
+
+            name: "Sudhan",
+
+            course: "MERN",
+
+            city: "Chennai",
+
+            age: 25
+
+        };
+        for (const key in student) {
+            console.log(key, " : ", student[key]);
+        }
+    }
+    loop()
+
+    console.log('Task 8 - Array of Objects Looping');
+    const arrobjLoop = () => {
+        let actors = [
+            {
+                name: "Vijay",
+                movie: "GOAT"
+            },
+
+            {
+                name: "Ajith",
+                movie: "Vidaamuyarchi"
+            },
+
+            {
+                name: "Suriya",
+                movie: "Kanguva"
+            }
+        ]
+        actors.forEach(element => {
+            console.log(element.name, " - ", element.movie);
+        });
+    }
+    arrobjLoop()
+
+
+    console.log('Task 9 - join() Method');
+    const tamilHeros = (tamilHeroArr) => {
+        console.log('Before join : ', tamilHeroArr);
+        const showJoin = tamilHeroArr.join("|")
+        console.log("After join : ",showJoin);
+    }
+    tamilHeros(["Vijay","Ajith","Suriya","SK"])
+
+    console.log('Task 10 - includes() Method');
+    const cours = (courseArr2) => {
+        console.log('Original Array', courseArr2);
+        const showIncludes = courseArr2.includes("React")
+        console.log('New array', showIncludes);
+        if(showIncludes){
+            console.log("course found");
+        }
+        else{
+            console.log("Course not found");
+            
+        }
+    
+    }
+    cours(["HTML", "CSS", "JavaScript", "React", "Node"])
+
+
+</script>
