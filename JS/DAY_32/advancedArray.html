@@ -1,0 +1,298 @@
+<script>
+
+    // map() Tasks
+    console.log('Task 1-Convert all names to uppercase using map().');
+    const heroes = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+const hero = heroes.map((e,i)=>e.toUpperCase())
+console.log(hero);
+
+
+    console.log('Task 2-Multiply every collection by 10');
+    const collections = [
+
+   100,
+
+   200,
+
+   300,
+
+   400
+];
+const reduce =collections.map((e,i)=>e*10)
+console.log(reduce);
+
+
+    console.log('Task 3-Adding String');
+    const movies = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+];
+const result = movies.map((e,i)=> `Movie: ${e}`)
+console.log(result);
+
+
+    // filter() Tasks
+    console.log('Task 4-Display collections greater than:500');
+    const collection = [
+
+   100,
+
+   500,
+
+   800,
+
+   200,
+
+   900
+];
+const vary=collection.filter((e,i)=>e>500)
+console.log(vary);
+
+
+    console.log('Task 5 - Display only passed students');
+    const marks = [
+
+   35,
+
+   80,
+
+   20,
+
+   90,
+
+   45
+];
+const total =marks.filter((e,i)=>e>35)
+console.log(total);
+
+    console.log('Task 6 - Display names having more than 4 characters');
+    const heroeses = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "SK",
+
+   "Suriya"
+];
+const movie = heroeses.filter((e,i)=>e.length>4)
+console.log(movie);
+
+
+
+    // find() Tasks
+    console.log('Task 7');
+    const actor = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+const actors=actor.find((e,i)=>e=="Ajith")
+console.log(actors);
+
+
+    console.log('Task 8');
+    
+const number = [
+
+   100,
+
+   500,
+
+   800,
+
+   200
+];
+const results = number.find(e => e > 400);
+
+console.log(results);
+
+    //  findIndex() Tasks
+    
+    console.log('Task 9');
+    const actores = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+const index =actores.findIndex((e,i)=>e==="Suriya")
+console.log(actores[index]);
+
+
+
+    console.log('Task 10');
+    const moviess = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+];
+const name =moviess.findIndex((e)=>e==="Leo")
+console.log(name);
+
+ 
+    // some() Tasks
+
+     console.log('Task 11 - Check if at least one student failed.');
+    const num = [
+
+   100,
+
+   200,
+
+   900
+];
+const sum=num.some((e,i)=>e>800)
+console.log(sum);
+
+
+    console.log('Task 12 - Check if at least one movie crossed');
+    const mark = [
+
+   35,
+
+   80,
+
+   20,
+
+   90
+];
+const avg=mark.some((e,i)=>e>35)
+console.log(avg);
+
+
+    // every() Tasks
+
+    console.log('Task 13 - Check if all students passed.');
+    const marks = [50,70,90,40];
+    const passedMarks=marks.every(e=> e >= 35)
+    console.log('Check if at least one student failed. : ',passedMarks);
+
+    console.log('Task 14 - Check if all ages are above:');
+    const ages = [20,25,30,35];
+    const eligible=ages.every(e=> e>18)
+    console.log('Check if all ages are above:',eligible);
+        
+
+    // reduce() Tasks
+
+     console.log('Task 15 - Find total collection using reduce().');
+    const collections = [100,200,300,400];
+    const total=collections.reduce((acc,current)=> {
+         return acc+current
+    },0)
+    console.log(`total collection : ${total}`);
+
+
+    // Array of Objects Tasks
+
+    console.log('Task 18 - Display only student names.');
+    const students = [
+
+        {
+            id: 1,
+            name: "Sudhan"
+        },
+
+        {
+            id: 2,
+            name: "Rahul"
+        }
+    ];
+    const displayName = students.map(e=>e.name)
+    console.log('Display only student names : ',displayName);
+    
+
+    console.log('task 19 -Display students whose age is above:');
+    const students = [
+
+        {
+            id: 1,
+            age: 20
+        },
+
+        {
+            id: 2,
+            age: 30
+        },
+
+        {
+            id: 3,
+            age: 18
+        }
+    ];
+    const age=students.filter(e=>e.age>20)
+    console.log('Display students whose age is above 20:',age);
+
+
+    console.log('Task 20');
+    const students = [
+
+        {
+            id: 1,
+            name: "Sudhan"
+        },
+
+        {
+            id: 2,
+            name: "Rahul"
+        }
+    ];
+    const findId=students.find(e=>e.id==2)
+    console.log('Find student with id=2 : ',findId);
+
+
+    // Intermediate Interview Tasks
+
+    console.log('Task 21-Find highest number from:');
+    const array = [100,500,800,200]
+    const highest =array.reduce((acc,current)=>{
+        let high=acc
+        if(acc<current){
+            high=current
+        }
+        return high
+    },0)
+    console.log(`highest number : ${highest}`);
+
+    console.log('Task 22-Find Lowest number from:');
+    const array1 = [100,500,800,200]
+    const lowest =array1.reduce((acc,current)=>{
+        let low=acc
+        if(acc>current){
+            low=current
+        }
+        return low
+    },100)
+    console.log(`lowest number : ${lowest}`);
+    
+    
+    console.log('Task 23- Display only even numbers.');
+    const array = [10, 15, 20, 25, 30]
+    const even = array.filter(e => e % 2 == 0)
+    console.log('Even numbers :', even);
+
+
+
+
+</script>

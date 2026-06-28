@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Task</title>
+</head>
+<body>
+    <h1 id="title" >
+   Welcome
+</h1>
+<button onclick="changeText()">Click Me</button>
+<p class="course" onmouseover="changePara()">
+   React
+</p>
+<input
+   id="username"
+   type="text"
+   onclick="changeInput()"
+/>
+<img
+   id="hero"
+   src="../../CSS/assets/images/fav-icon/favicon_io (4)/favicon-16x16.png"
+/>
+<a
+   id="website"
+   href="#"
+>
+   Visit
+</a>
+
+
+
+
+
+<script>
+    const name=document.getElementById("title")
+    function changeText() {
+    document.getElementById("title").innerText = "Welcome to DOM";
+}
+function changePara(){
+    document.querySelector(".course").innerText="MERN Stack"
+}
+function changeInput() {
+    document.getElementById("username").value="Sudhan"
+    
+}
+document.querySelector("#hero").src = "../../CSS/assets/fav-icon/favicon_io (4)/favicon-32x32.png"
+document.getElementById("website").href="https://google.com"
+
+</script>
+</body>
+</html>

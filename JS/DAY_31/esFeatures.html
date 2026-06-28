@@ -1,0 +1,112 @@
+<script>
+    console.log('Task 1 - let');
+    let name = "Maggie"
+    console.log(`my name is : ${name}`);
+    name = "Niveda"
+    console.log(`my name is : ${name}`);
+
+    console.log('Task 2 - let Scope');
+    if(true){
+       let a="Javascript"
+    }
+    console.log("Display",a);
+
+
+     console.log('Task 3 - const');
+    const course="Java"
+
+    console.log("Course name:",course);
+    
+    course="MERN"
+    console.log("Course name:",course);
+    
+     console.log('Task 4 - Arrow Function');
+
+    const greet = () => {
+        console.log("Welcome To JavaScript");
+    }
+    greet()
+
+    console.log('Task 5 - Arrow Function With Parameters');
+    const showHero = (heroName) => {
+        console.log(`Hero Name : ${heroName}`);
+
+    }
+    showHero("Vijay")
+
+    console.log('Task 6 - Arrow Function Addition');
+    const add = (a, b) => {
+        console.log(a + b);
+    }
+    add(10, 20)
+
+    console.log('Task 7 - Template Literals');
+    const heros = (hero) => {
+        console.log(`My Favourite Hero is ${hero}`);
+
+    }
+    heros("Vijay")
+
+    console.log('Task 8 - Template Literals Multiple Values');
+    const literals = (name, course, city) => {
+        console.log(`My name is ${name} and I choose the course called ${course} and I come from $(city).`);
+
+    }
+    literals("Niveda", "Javascript", "Chennai")
+
+    console.log("Task 9 - Array Destructuring");
+    const heroArr = ["Vijay", "Ajith", "Suriya"]
+    const [x, y, z] = heroArr
+    console.log(`hero1 : ${x}, hero2 : ${y}, hero3 : ${z}`);
+
+    console.log("Task 10 - Object Destructuring");
+    const obj = {
+        name: "Sudhan",
+        course: "MERN",
+        city: "Chennai"
+    }
+    const { name, course, city } = obj
+    console.log(`My name is ${name} and I choose the course called ${course} then I come from $(city).`);
+
+    console.log('Task 11 - Spread Operator (Array Copy)');
+    arr1 = ["HTML", "CSS", "JavaScript"]
+    const addData = [...arr1, 'React']
+    console.log("Copied Array : ", addData);
+
+    console.log('Task 12 - Spread Operator (Merge Arrays)');
+    const arr2 = ["Vijay", "Ajith"]
+    const arr3 = ["Suriya", "SK"]
+    const merge = [...arr2, ...arr3]
+    console.log(`Merged Array : ${merge}`);
+
+    console.log('Task 13 - Spread Operator (Object Copy)');
+    const object = {
+        name: "Sudhan",
+        city: "Chennai"
+    }
+    const copyObj={...object,course:"MERN"}
+    console.log(copyObj);
+    
+    console.log('Task 14 - Rest Parameter');
+    const total=(...numbers)=>{
+        console.log("Recieved Values : ",numbers);  
+    }
+    total(10,20,30,40,50)
+
+    console.log('Task 15 - Rest + Sum');
+    const sum=(...values)=>{
+        let sumValue=0
+        for(let i=0;i<5;i++){
+            sumValue+=values[i]
+        }
+        console.log('Sum : ',sumValue);
+    }
+    sum(10,20,30,40,50)
+    
+    
+    
+    
+
+
+    
+</script>
