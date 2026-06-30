@@ -1,0 +1,17 @@
+<script>
+const Datatake = async()=>{
+const datas = await fetch ("https://dummyjson.com/users")
+const res = await datas.json()
+const result = res.users
+let users_Data = document.getElementById("users Data")
+result.forEach((e,i)=>{
+
+    users_Data.innerHTML=
+{
+    <
+
+})
+
+}
+
+</script>
