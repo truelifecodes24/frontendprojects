@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <form id="formData">
+       <div>
+         <input type="text" id="name"      placeholder="Enter name:" required>
+        <input type="email" id="email" placeholder="enter valid mail:" required>
+        <input type="password" id="password" placeholder="enter strong password" required>
+        <button type="button"     onclick="registerStart(event)">register</button>
+       </div>
+        <div>
+        <input type="email" id="loginEmail" placeholder="enter valid mail:" required>
+        <input type="password" id="loginPassword" placeholder="enter strong password" required>
+        <button  type="button"    onclick="loginStart()">login</button>
+        </div>
+
+    </form>
+    <script>
+            let data =[]
+            function registerStart(){
+             
+                let userName = document.getElementById("name").value
+                let userEmail = document.getElementById("email").value
+                let userPassword = document.getElementById("password").value
+                const fromdata = document.getElementById("formData");
+                if(userName === "" || userEmail=== "" || userPassword === "" ){
+                    alert("Please Fill data")
+                    return
+                }
+                 let user = { userName,userEmail,userPassword};
+
+                 const checkEmail = data.find((e)=>e.userEmail === userEmail)
+                 if(checkEmail){
+                    alert('Email id is already there use Different')
+                      return
+                 }
+                 data.push(user)
+                  localStorage.setItem("user",JSON.stringify(data))
+                  alert('Register Successfully Done')
+                  fromdata.reset()
+
+            }
+
+            function loginStart(){
+                const loginemail = document.getElementById("loginEmail").value
+                const loginpassword = document.getElementById("loginPassword").value
+                const fromdatalogin = document.getElementById("formData")
+
+                 console.log('database',data);
+
+                  const takeData = localStorage.getItem("user")
+                  const changedata = JSON.parse(takeData)
+
+                  const logincheck = changedata.find((e)=>e.userEmail === loginemail && e.userPassword === loginpassword)
+
+                  if(!logincheck){
+        
+                     alert("Your Not Valid user")
+                      return
+                   }
+                localStorage.setItem("users",JSON.stringify(logincheck))
+                 window.location.href = "register.html"
+
+                fromdatalogin.reset()
+            }
+        
+            
+        </script>
+</body>
+</html>

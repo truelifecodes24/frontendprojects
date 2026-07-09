@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Events: click, input, submit, addEventListener</title>
+</head>
+<body>
+
+    <input type="text" id="heroInput" placeholder="Enter hero name">
+    <button onclick="showHero()">Display Hero</button>
+
+    <h2 id="result"></h2>
+
+
+    <p id="solar" style="display: contents;">The sun, eight planets, and satellites make up the solar system. Asteroids, comets, dust, small planets, and gas are among the other objects found in space. The Sun, Mercury, Venus, Earth, and Mars make up the inner solar system, whereas the asteroid belt is between Mars and Jupiter’s orbit. According to our knowledge, there are around 500 solar systems in the universe. The outer solar system planets are Jupiter, Saturn, Uranus, and Neptune. The sun is at the centre of the solar system, and the planets revolve around it in their own orbits. The rotation of the planets causes the days and nights, and the changing of seasons is caused by the revolution of the planets around the sun. Our solar system exists in the Milkyway galaxy. According to scientists and astronomers, the earth is the only planetary body where life can exist. But this can be proven wrong after more discoveries about the universe.</p>
+    <button onclick="hideHere()">To hide</button>
+
+
+    <div>
+    <p id="solarsystem" style="display: contents;">The sun, eight planets, and satellites make up the solar system. Asteroids, comets, dust, small planets, and gas are among the other objects found in space. The Sun, Mercury, Venus, Earth, and Mars make up the inner solar system, whereas the asteroid belt is between Mars and Jupiter’s orbit. According to our knowledge, there are around 500 solar systems in the universe. The outer solar system planets are Jupiter, Saturn, Uranus, and Neptune. The sun is at the centre of the solar system, and the planets revolve around it in their own orbits. The rotation of the planets causes the days and nights, and the changing of seasons is caused by the revolution of the planets around the sun. Our solar system exists in the Milkyway galaxy. According to scientists and astronomers, the earth is the only planetary body where life can exist. But this can be proven wrong after more discoveries about the universe.</p>
+    <button onclick="hideShow()">To Show</button>
+    </div>
+
+
+    <div>
+           <div>
+            <button  onclick="clickShow()" >Click Me</button>
+        </div>
+       
+        <div>
+            <p id="box" style="display: block;">Mindfulness is the practice of intentionally anchoring your awareness to the present moment. By observing your thoughts, bodily sensations, and environment with a non-judgmental attitude, you can avoid automatic reactions and reduce stress. Rooted in ancient meditation techniques, this cognitive skill is now widely used in modern therapies to improve overall focus and emotional well-being.</p>
+        </div>
+    </div>
+   
+    </div>
+
+    <div>
+        <input type="text" id="name" placeholder="enter ">
+        <button onclick="verifyLogin()">click</button>
+        <p id="results"></p>
+    </div>
+
+    <div>
+        <input type="password" id="pass" placeholder="password">
+        <button onclick="passWord()">click</button>
+        <h3 id="word"></h3>
+    </div>
+
+    <div>
+        <input type="text" id="first" placeholder="first name">
+        <input type="text" id="last" placeholder="last name">
+        <button onclick="clicktwo()">click</button>
+        <h2 id="values"></h2>
+    </div>
+    <h1 id="heading">Welcome</h1>
+
+    <button onclick="changeHeading()">Click Me</button>
+
+    <div>
+        <input type="text" id="empty" placeholder="enter value">
+        <button onclick="emptyValue()">click</button>
+        <p id="abi"></p>
+    </div>
+    <div>
+        <button onclick="increaseCount()">Click Me</button>
+
+    <h2 id="count">0</h2>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function showHero() {
+            let heroName = document.getElementById("heroInput").value;
+            document.getElementById("result").textContent = heroName;
+        }
+        let ball=document.getElementById("solar")
+        function hideHere(){
+            ball.style.display="none"
+        }
+
+
+        document.getElementById("solarsystem").style.display="none"
+        function hideShow(){
+                 document.getElementById("solarsystem").style.display="contents"
+        }
+
+
+        const clickValue=document.getElementById("box")
+            clickValue.style.display = "none";
+           const clickShow=()=>{
+             if (clickValue.style.display == "none") {
+                clickValue.style.display = "block";
+               
+            } else {
+                clickValue.style.display = "none";
+               
+            }
+        }
+
+        function verifyLogin(){
+            if(document.getElementById("name").value==="admin"){
+                document.getElementById("results").innerText="Login Successfully"
+            }
+            else{
+                document.getElementById("results").innerText="invalid User"
+            }
+        }
+
+        function passWord(){
+            if(document.getElementById("pass").value.length>=8){
+                document.getElementById("word").innerText="Strong password"
+            }
+            else{
+                document.getElementById("word").innerText="Weak password"
+            }
+        }
+        function clicktwo(){
+            const firstName=document.getElementById("first").value
+            const lastName=document.getElementById("last").value
+            document.getElementById("values").innerText=firstName + " " + lastName
+        }
+         function changeHeading() {
+            let heading = document.getElementById("heading");
+
+            heading.innerText = "Hello Niveda!";
+            heading.style.color = "blue";
+        }
+        function emptyValue(){
+            if(document.getElementById("empty").value===""){
+                document.getElementById("abi").innerText="please enter value"
+            }
+            else{
+                document.getElementById("abi").innerText="form submited"
+            }
+        }
+         let counter = 0;
+
+        function increaseCount() {
+            counter++;
+            document.getElementById("count").innerText = counter;
+        }
+
+
+
+           
+    </script>
+
+</body>
+</html>
