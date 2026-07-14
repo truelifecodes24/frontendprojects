@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts</title>
+
+    <style>
+        body{
+            background-color: rgb(160, 134, 215);
+            font-family: Arial, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        div{
+            background-color: rgb(176, 193, 198);
+            margin: 15px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Concepts</h1>
+
+    <div>
+        <h2>Why Callback?</h2>
+        <p>
+            A callback is a function passed as an argument to another function.
+            It is executed only after the first function completes its task.
+            Callbacks help control the order of execution.
+            They are mainly used in asynchronous operations.
+            Examples include timers and event handling.
+            However, using many callbacks can make the code difficult to read.
+        </p>
+    </div>
+
+    <div>
+        <h2>Why Promise?</h2>
+        <p>
+            A Promise is used to handle asynchronous operations.
+            It helps avoid callback hell.
+            Promises make the code more organized and readable.
+            A Promise has three states: Pending, Fulfilled, and Rejected.
+            It uses <b>.then()</b> for success and <b>.catch()</b> for errors.
+            This makes error handling much easier.
+        </p>
+    </div>
+
+    <div>
+        <h2>Why Async/Await?</h2>
+        <p>
+            Async/Await is built on top of Promises.
+            It makes asynchronous code look like synchronous code.
+            The <b>async</b> keyword defines an asynchronous function.
+            The <b>await</b> keyword waits until a Promise is completed.
+            It improves readability and reduces complexity.
+            It also makes debugging and error handling easier.
+        </p>
+    </div>
+
+    <div>
+        <h2>Why Fetch?</h2>
+        <p>
+            Fetch is a JavaScript API used to communicate with servers.
+            It is commonly used to retrieve data from APIs.
+            It can also send data using POST, PUT, or DELETE requests.
+            Fetch returns a Promise.
+            It works well with Async/Await for cleaner code.
+            It is widely used in modern web applications.
+        </p>
+    </div>
+
+</body>
+</html>

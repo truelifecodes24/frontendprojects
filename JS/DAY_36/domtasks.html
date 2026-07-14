@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript DOM Tasks</title>
+<style>
+body{font-family:Arial,sans-serif;padding:20px;line-height:1.6}
+section{border:1px solid #ccc;padding:15px;margin-bottom:20px;border-radius:8px}
+.dark{background:#222;color:#fff}
+.card{border:1px solid #000;padding:10px;margin-top:10px;width:250px}
+button{margin-top:5px}
+</style>
+</head>
+<body>
+<h1>JavaScript DOM Tasks</h1>
+
+<section>
+<h3>1. Character Counter</h3>
+<textarea id="txt" oninput="countChar()"></textarea>
+<p>Total Characters : <span id="count">0</span></p>
+</section>
+
+<section>
+<h3>2. Age Category Checker</h3>
+<input type="number" id="age"><button onclick="checkAge()">Check</button>
+<p id="ageResult"></p>
+</section>
+
+<section>
+<h3>3. Dark / Light Mode</h3>
+<button onclick="toggleTheme()">Toggle Theme</button>
+</section>
+
+<section>
+<h3>4. Movie Ticket Calculator</h3>
+<input type="number" id="ticket">
+<button onclick="ticketCalc()">Calculate</button>
+<p id="ticketResult"></p>
+</section>
+
+<section>
+<h3>5. Profile Card Generator</h3>
+<input id="pname" placeholder="Name"><br><br>
+<input id="role" placeholder="Role"><br><br>
+<input id="company" placeholder="Company"><br><br>
+<button onclick="profile()">Generate</button>
+<div id="profileCard"></div>
+</section>
+
+<section>
+<h3>6. Search Hero</h3>
+<input id="hero"><button onclick="searchHero()">Search</button>
+<p id="heroResult"></p>
+</section>
+
+<section>
+<h3>7. Lucky Number Checker</h3>
+<input type="number" id="lucky"><button onclick="luckyCheck()">Check</button>
+<p id="luckyResult"></p>
+</section>
+
+<section>
+<h3>8. Product Price Calculator</h3>
+<input id="product" placeholder="Product"><br><br>
+<input type="number" id="qty" placeholder="Quantity"><br><br>
+<input type="number" id="price" placeholder="Price"><br><br>
+<button onclick="priceCalc()">Calculate</button>
+<p id="priceResult"></p>
+</section>
+
+<section>
+<h3>9. Random Quote Generator</h3>
+<button onclick="quote()">Show Quote</button>
+<p id="quoteResult"></p>
+</section>
+
+<section>
+<h3>10. Student ID Generator</h3>
+<input id="sname" placeholder="Name"><br><br>
+<input id="course" placeholder="Course"><br><br>
+<button onclick="student()">Generate</button>
+<div id="studentCard"></div>
+</section>
+
+<section>
+<h3>Bonus - Mini ATM</h3>
+<button onclick="deposit()">Deposit ₹500</button>
+<button onclick="withdraw()">Withdraw ₹300</button>
+<button onclick="balance()">Check Balance</button>
+<p id="bal"></p>
+</section>
+
+<script>
+function countChar(){
+document.getElementById("count").innerText=document.getElementById("txt").value.length;
+}
+
+function checkAge(){
+let a=Number(document.getElementById("age").value),r="";
+if(a<=12)r="Child";
+else if(a<=19)r="Teenager";
+else if(a<=59)r="Adult";
+else r="Senior Citizen";
+document.getElementById("ageResult").innerText=r;
+}
+
+function toggleTheme(){document.body.classList.toggle("dark");}
+
+function ticketCalc(){
+let t=Number(document.getElementById("ticket").value);
+document.getElementById("ticketResult").innerText="Total Amount : ₹"+(t*150);
+}
+
+function profile(){
+document.getElementById("profileCard").innerHTML=
+`<div class="card">
+<h4>${pname.value}</h4>
+<p>${role.value}</p>
+<p>${company.value}</p>
+</div>`;
+}
+
+const heroes=["Vijay","Ajith","Suriya","SK","Dhanush"];
+function searchHero(){
+document.getElementById("heroResult").innerText=
+heroes.includes(hero.value)?"Found":"Not Found";
+}
+
+const lucky=[7,14,21,28];
+function luckyCheck(){
+document.getElementById("luckyResult").innerText=
+lucky.includes(Number(document.getElementById("lucky").value))?"Lucky Number":"Normal Number";
+}
+
+function priceCalc(){
+let q=Number(qty.value),p=Number(price.value);
+priceResult.innerHTML=`Product : ${product.value}<br>Quantity : ${q}<br>Total : ₹${q*p}`;
+}
+
+const quotes=[
+"Dream big.","Never give up.","Practice daily.","Be kind.","Success follows effort."
+];
+function quote(){
+quoteResult.innerText=quotes[Math.floor(Math.random()*quotes.length)];
+}
+
+let id=1001;
+function student(){
+studentCard.innerHTML=`<div class="card">
+<h4>${sname.value}</h4>
+<p>${course.value}</p>
+<p>ID : STU${id++}</p>
+</div>`;
+}
+
+let amt=1000;
+function deposit(){amt+=500;balance();}
+function withdraw(){if(amt>=300)amt-=300;balance();}
+function balance(){bal.innerText="Balance : ₹"+amt;}
+</script>
+</body>
+</html>
