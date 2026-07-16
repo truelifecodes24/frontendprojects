@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing Cards</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="bg-gray-300 flex flex-col items-center  p-5 mb-3 text-center text-lg">DOM Tasks</h1>
+    <div id="card">
+
+    </div>
+
+    <script>
+        const cardCreation = async () => {
+            const datas = await fetch("https://dummyjson.com/quotes")
+            const res = await datas.json()
+            const result = res.quotes
+            const cardData = document.getElementById("card")
+            result.forEach((e, i) => {
+                cardData.innerHTML += `
+                 <div class="bg-gray-200 p-5  shadow-lg rounded-lg  mx-auto mt-10 " style="height:170px;width:600px" ;>
+                 <p><strong>Id : </strong> ${i + 1}</p>
+                 <p><strong>Quote : </strong>${e.quote}</p>
+                 <p><strong>Author : </strong>${e.author}</p>
+    
+                 </div>`       })
+        }
+        cardCreation()
+    </script>
+</body>
+
+</html>

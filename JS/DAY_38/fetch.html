@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>S.NO</th>
+            <th>Name</th>
+            <th>Servings</th>
+            <th>Difficulty</th>
+        </thead>
+        
+        <tbody id="user">
+
+        </tbody>
+    </table>
+
+
+
+
+    <script>
+        // async function
+        const dataTake =async()=>{
+            // using await in fetch function
+
+        const res = await fetch("https://dummyjson.com/recipes")
+        //data parsing
+        const take = await res.json()
+        //data store from another function
+         let result = take.recipes
+        //Take UI from the HTML-doc
+         const data = document.getElementById("user")
+         function user(){
+            //result foreach
+            result.forEach((e,i) => {
+                data.innerHTML +=`
+                <tr>
+                <td>${i + 1}</td>
+                <td>${e.name}</td>
+                <td>${e.servings}</td>
+                <td>${e.difficulty}</td>
+                </tr>
+                `
+                
+            });
+         }
+         user()
+
+         
+        }
+        // function calll
+        dataTake()
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

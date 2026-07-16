@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM, React, Components, Functions</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .container{
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card{
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2{
+            color: darkred;
+        }
+
+        code{
+            display: block;
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+        }
+
+        button{
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>HTML, DOM, React, Components & Functions</h1>
+
+<!-- DOM -->
+
+<div class="card">
+
+<h2>1. What is DOM?</h2>
+
+<p>
+     The <b>Document Object Model (DOM)</b> is a tree structure that represents an HTML document.
+                It allows JavaScript to access and modify HTML elements, content, and styles.
+                The DOM also helps handle user events like clicks and keyboard input.
+                It makes web pages dynamic and interactive.
+</p>
+
+<h3>Uses of DOM</h3>
+
+<ul>
+<li>Change HTML content</li>
+<li>Change CSS styles</li>
+<li>Add or remove elements</li>
+<li>Handle user events</li>
+</ul>
+
+<p id="demo">Hello World</p>
+
+<button onclick="changeText()">Click Here</button>
+
+</div>
+
+<!-- React -->
+
+<div class="card">
+
+<h2>2. What is React?</h2>
+
+<p>
+<b>React</b> is a JavaScript library used to build fast and interactive user interfaces.
+It uses reusable components to create web applications.
+ React updates only the changed parts of a webpage using the Virtual DOM.
+ It is widely used for developing modern single-page applications.
+</p>
+
+<h3>Features</h3>
+
+<ul>
+<li>Reusable Components</li>
+<li>Virtual DOM</li>
+<li>Fast Performance</li>
+<li>Easy State Management</li>
+<li>One-way Data Binding</li>
+</ul>
+
+<code>
+function App() {
+    return (
+        &lt;h1&gt;Hello React!&lt;/h1&gt;
+    );
+}
+</code>
+
+</div>
+
+<!-- Components -->
+
+<div class="card">
+
+<h2>3. What are Components?</h2>
+
+<p>
+<b>Components</b> are reusable pieces of code that build parts of a React application.
+Each component contains its own structure and logic.
+They help organize code and reduce repetition.
+Components make applications easier to develop and maintain.
+Each component contains its own HTML, CSS and JavaScript logic.
+Components help make code modular and reusable.
+</p>
+
+<h3>Types of Components</h3>
+
+<ol>
+<li>Functional Component</li>
+<li>Class Component</li>
+</ol>
+
+<code>
+function Welcome() {
+    return &lt;h2&gt;Welcome to React&lt;/h2&gt;;
+}
+</code>
+
+</div>
+
+<!-- Functions -->
+
+<div class="card">
+
+<h2>4. What are Functions?</h2>
+
+<p>
+A <b>function</b> is a block of reusable code that performs a
+specific task. It executes only when it is called.
+It can take inputs called parameters and return an output.
+Functions help avoid writing the same code multiple times.
+In React, functional components are created using JavaScript functions.
+Functions help reduce code duplication and improve readability.
+</p>
+
+<h3>Example</h3>
+
+<code>
+function greet() {
+    alert("Hello World");
+}
+
+greet();
+</code>
+
+<button onclick="greet()">Run Function</button>
+
+</div>
+
+</div>
+
+<script>
+
+function changeText(){
+    document.getElementById("demo").innerHTML = "Welcome to DOM!";
+}
+
+function greet(){
+    alert("Hello World!");
+}
+
+</script>
+
+</body>
+</html>
