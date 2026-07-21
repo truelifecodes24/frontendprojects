@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Moviefy | Discover. Explore. Watch.</title>
+
+
+    <link rel="icon" href="assets/icons/favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="assets/css/moviefy.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container">
+            <a href="index.html" class="logo">
+                🎬 Moviefy
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="favorites.html">My List</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <a href="search.html" class="search-btn">Search</a>
+
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <!-- =====================================
+     HERO SECTION
+===================================== -->
+
+        <section class="hero">
+
+            <div class="hero-overlay">
+
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+                        🎬 #1 Movie Discovery Platform
+                    </span>
+
+                    <h1>
+                        Discover. Explore. Watch.
+                    </h1>
+
+                    <p>
+                        Welcome to Moviefy — your gateway to blockbuster hits,
+                        timeless classics, top-rated movies, and trending releases.
+                        Explore thousands of movies from around the world with a
+                        beautiful and seamless experience.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="categories.html" class="btn explore-btn">
+                            Explore Movies
+                        </a>
+
+                        <button class="favorites-btn">
+                            ❤️ My Favorites
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+     FEATURED COLLECTIONS
+===================================== -->
+
+
+        <section class="featured-collections">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>✨ Featured Collections</h2>
+
+                    <a href="categories.html" class="view-all">
+                        View All →
+                    </a>
+
+                </div>
+
+                <div class="collection-grid">
+
+                    <article class="collection-card">
+
+                        <img src="assets/images/marvel.jpg" alt="Marvel Collection">
+
+                        <div class="collection-overlay">
+
+                            <span class="collection-tag">
+                                Action
+                            </span>
+
+                            <h3>
+                                Marvel Universe
+                            </h3>
+
+                        </div>
+
+                    </article>
+                    <article class="collection-card">
+
+                        <img src="assets/images/harry-potter.jpg" alt="Harry Potter Collection">
+
+
+                        <div class="collection-overlay">
+
+
+                            <span class="collection-tag">
+                                Fantasy
+                            </span>
+
+                            <h3>
+                                Harry Potter
+                            </h3>
+
+
+                        </div>
+                    </article>
+
+                    <article class="collection-card">
+
+                        <img src="assets/images/scifi.jpg" alt="Sci-Fi Collection">
+
+                        <div class="collection-overlay">
+
+                            <span class="collection-tag">
+                                Sci-Fi
+                            </span>
+
+                            <h3>
+                                Sci-Fi Essentials
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+                    <article class="collection-card">
+
+                        <img src="assets/images/marvel.jpg" alt="Oscar Winners">
+
+                        <div class="collection-overlay">
+
+                            <span class="collection-tag">
+                                Award Winners
+                            </span>
+
+                            <h3>
+                                Oscar Winners
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- =====================================
+     TRENDING MOVIES
+===================================== -->
+
+        <section class="movie-section">
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>🔥 Trending Now</h2>
+
+                    <a href="categories.html" class="view-all">
+                        View All →
+                    </a>
+
+                </div>
+
+                <div class="movie-row" id="trendingRow">
+
+                    <!-- Temporary Movie Card -->
+
+                    <article class="movie-card">
+
+                        <img src="assets/images/poster.jpg" alt="Movie Poster">
+
+                        <div class="movie-info">
+
+                            <div class="movie-top">
+
+                                <span class="rating">
+                                    ⭐ 8.8
+                                </span>
+
+                                <button class="favorite-btn">
+                                    ❤
+                                </button>
+
+                            </div>
+
+                            <h3>Avengers: Endgame</h3>
+
+                            <p>Action • Adventure</p>
+
+                            <span class="year">2019</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- =====================================
+     POPULAR MOVIES
+===================================== -->
+
+        <section class="movie-section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>🎥 Popular on Moviefy</h2>
+
+                    <a href="categories.html" class="view-all">
+                        View All →
+                    </a>
+
+                </div>
+
+                <div class="movie-row" id="popularRow"></div>
+
+            </div>
+
+        </section>
+
+        <section class="movie-section">
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>⭐ Top Rated</h2>
+
+                    <a href="categories.html" class="view-all">
+                        View All →
+                    </a>
+
+                </div>
+
+                <div class="movie-row" id="topRatedRow"></div>
+
+
+            </div>
+        </section>
+
+        <!-- =====================================
+     UPCOMING RELEASES
+===================================== -->
+
+        <section class="movie-section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>🎬 Upcoming Releases</h2>
+
+                    <a href="categories.html" class="view-all">
+                        View All →
+                    </a>
+
+                </div>
+
+                <div class="movie-row" id="upcomingRow"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">🎬 Moviefy</div>
+
+        <p>Discover. Explore. Watch.</p>
+
+        <p>© 2026 Moviefy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
