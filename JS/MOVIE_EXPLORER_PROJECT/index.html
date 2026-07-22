@@ -8,8 +8,8 @@
     <title>Moviefy | Discover. Explore. Watch.</title>
 
 
-    <link rel="icon" href="assets/icons/favicon.jpg" type="image/jpg">
-    <link rel="stylesheet" href="assets/css/moviefy.css" />
+    <link rel="icon" href="../assets/icons/favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="../assets/css/moviefy.css" />
     <link rel="stylesheet" href="css/home.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,7 +110,7 @@
 
                     <article class="collection-card">
 
-                        <img src="assets/images/marvel.jpg" alt="Marvel Collection">
+                        <img src="../assets/images/marvel.jpg" alt="Marvel Collection">
 
                         <div class="collection-overlay">
 
@@ -127,7 +127,7 @@
                     </article>
                     <article class="collection-card">
 
-                        <img src="assets/images/harry-potter.jpg" alt="Harry Potter Collection">
+                        <img src="../assets/images/harry-potter.jpg" alt="Harry Potter Collection">
 
 
                         <div class="collection-overlay">
@@ -147,7 +147,7 @@
 
                     <article class="collection-card">
 
-                        <img src="assets/images/scifi.jpg" alt="Sci-Fi Collection">
+                        <img src="../assets/images/scifi.jpg" alt="Sci-Fi Collection">
 
                         <div class="collection-overlay">
 
@@ -165,7 +165,7 @@
 
                     <article class="collection-card">
 
-                        <img src="assets/images/marvel.jpg" alt="Oscar Winners">
+                        <img src="../assets/images/harry-potter.jpg" alt="Oscar Winners">
 
                         <div class="collection-overlay">
 
@@ -207,33 +207,43 @@
 
                     <!-- Temporary Movie Card -->
 
-                    <article class="movie-card">
+                    <!-- <article class="movie-card">
 
-                        <img src="assets/images/poster.jpg" alt="Movie Poster">
+                        <div class="movie-poster">
 
-                        <div class="movie-info">
+                            <img src="../assets/images/avengers.jpg" alt="Movie Poster">
 
-                            <div class="movie-top">
+                            <button class="favorite-btn">
+                                ❤
+                            </button>
 
-                                <span class="rating">
-                                    ⭐ 8.8
-                                </span>
-
-                                <button class="favorite-btn">
-                                    ❤
-                                </button>
-
+                            <div class="movie-rating">
+                                ⭐ 8.8
                             </div>
-
-                            <h3>Avengers: Endgame</h3>
-
-                            <p>Action • Adventure</p>
-
-                            <span class="year">2019</span>
 
                         </div>
 
-                    </article>
+                        <div class="movie-info">
+
+                            <h3 class="movie-title">
+                                Avengers: Endgame
+                            </h3>
+
+                            <p class="movie-genre">
+                                Action • Adventure
+                            </p>
+
+                            <div class="movie-meta">
+
+                                <span>2019</span>
+
+                                <span>181 min</span>
+
+                            </div>
+
+                        </div>
+
+                    </article> -->
 
                 </div>
             </div>
@@ -317,8 +327,10 @@
         <p>© 2026 Moviefy. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/storage.js"></script>
     <script src="js/home.js"></script>
+    
 </body>
 
 </html>
